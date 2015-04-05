@@ -43,3 +43,11 @@ gem 'kaminari', '~> 0.15.1'
 gem 'ransack', '~> 1.2.2'
 gem 'carrierwave', '~> 0.10.0'
 
+group :development, :test do
+  gem 'rspec-rails', '3.0.2'
+  gem 'factory_girl_rails', '~> 4.4.1'
+end
+
+group :test do
+  gem 'shoulda-matchers', '~> 2.6.0'
+end
