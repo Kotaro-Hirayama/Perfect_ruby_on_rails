@@ -46,8 +46,14 @@ gem 'carrierwave', '~> 0.10.0'
 group :development, :test do
   gem 'rspec-rails', '3.0.2'
   gem 'factory_girl_rails', '~> 4.4.1'
+
+  gem 'pry-rails'  # rails console(もしくは、rails c)でirbの代わりにpryを使われる
+  gem 'pry-doc'    # methodを表示
+  gem 'pry-byebug' # デバッグを実施(Ruby 2.0以降で動作する)
+  gem 'pry-stack_explorer' # スタックをたどれる
 end
 
 group :test do
   gem 'shoulda-matchers', '~> 2.6.0'
 end
+
